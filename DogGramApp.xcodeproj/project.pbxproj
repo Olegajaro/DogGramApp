@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		103C862F2961AD3400C30504 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C862E2961AD3400C30504 /* Extensions.swift */; };
 		105245BD2961944B0076D29C /* DogGramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105245BC2961944B0076D29C /* DogGramApp.swift */; };
 		105245BF2961944B0076D29C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105245BE2961944B0076D29C /* ContentView.swift */; };
 		105245C12961944C0076D29C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105245C02961944C0076D29C /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		103C862E2961AD3400C30504 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		105245B92961944B0076D29C /* DogGramApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogGramApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		105245BC2961944B0076D29C /* DogGramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogGramApp.swift; sourceTree = "<group>"; };
 		105245BE2961944B0076D29C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +36,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		103C862A2961AAE800C30504 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				103C862B2961AAF400C30504 /* Screens */,
+				103C862C2961AAFC00C30504 /* Subviews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		103C862B2961AAF400C30504 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				105245BE2961944B0076D29C /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		103C862C2961AAFC00C30504 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		103C862D2961AD2100C30504 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				103C862E2961AD3400C30504 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		105245B02961944B0076D29C = {
 			isa = PBXGroup;
 			children = (
@@ -53,8 +87,9 @@
 		105245BB2961944B0076D29C /* DogGramApp */ = {
 			isa = PBXGroup;
 			children = (
+				103C862D2961AD2100C30504 /* Helpers */,
 				105245BC2961944B0076D29C /* DogGramApp.swift */,
-				105245BE2961944B0076D29C /* ContentView.swift */,
+				103C862A2961AAE800C30504 /* Views */,
 				105245C02961944C0076D29C /* Assets.xcassets */,
 				105245C22961944C0076D29C /* Preview Content */,
 				105245CA296197550076D29C /* LaunchScreen.storyboard */,
@@ -142,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				105245BF2961944B0076D29C /* ContentView.swift in Sources */,
+				103C862F2961AD3400C30504 /* Extensions.swift in Sources */,
 				105245BD2961944B0076D29C /* DogGramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
