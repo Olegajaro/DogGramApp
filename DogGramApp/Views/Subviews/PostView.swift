@@ -32,7 +32,7 @@ struct PostView: View {
                 Image(systemName: "ellipsis")
                     .font(.headline)
             }
-            .padding(.all, 6)
+            .padding(6)
             
             // MARK: - Image
             Image("dog1")
@@ -42,19 +42,28 @@ struct PostView: View {
             // MARK: - Footer
             HStack(alignment: .center, spacing: 20) {
                 Image(systemName: "heart")
-                Image(systemName: "bubble.middle.bottom")
+                
+                // MARK: - Comments Icon
+                NavigationLink {
+                    CommentsView()
+                } label: {
+                    Image(systemName: "bubble.middle.bottom")
+                        .foregroundColor(.primary)
+                }
+
                 Image(systemName: "paperplane")
+                
                 Spacer()
             }
             .font(.title3)
-            .padding(.all, 6)
+            .padding(6)
             
             if let caption = post.caption {
                 HStack {
                     Text(caption)
                     Spacer(minLength: 0)
                 }
-                .padding(.all, 6)
+                .padding(6)
             }
         }
     }

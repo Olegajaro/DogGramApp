@@ -10,14 +10,16 @@ import SwiftUI
 struct CommentsView: View {
     
     @State var submissionText = ""
+    @State var commentArray = [CommentModel]()
     
     var body: some View {
         VStack {
             ScrollView {
-                Text("Placeholder")
-                Text("Placeholder")
-                Text("Placeholder")
-                Text("Placeholder")
+                LazyVStack {
+                    ForEach(commentArray, id: \.self) { comment in
+                        MessageView(comment: comment)
+                    }
+                }
             }
             
             HStack {
@@ -41,6 +43,28 @@ struct CommentsView: View {
         }
         .navigationTitle("Comments")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear {
+            getComments()
+        }
+    }
+    
+    // MARK: - Functions
+    private func getComments() {
+        print("DEBUG: get comments from Database")
+        
+        let comment1 = CommentModel(commentID: "", userID: "", username: "Joe Black",
+                                    content: "This is the first comment", dateCreated: Date())
+        let comment2 = CommentModel(commentID: "", userID: "", username: "Ostin",
+                                    content: "This is the second comment", dateCreated: Date())
+        let comment3 = CommentModel(commentID: "", userID: "", username: "Amanda",
+                                    content: "This is the third comment", dateCreated: Date())
+        let comment4 = CommentModel(commentID: "", userID: "", username: "Emily",
+                                    content: "This is the fourth comment", dateCreated: Date())
+        
+        commentArray.append(comment1)
+        commentArray.append(comment2)
+        commentArray.append(comment3)
+        commentArray.append(comment4)
     }
 }
 
