@@ -25,6 +25,7 @@
 		1055E8412963DEFB00671FBB /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055E8402963DEFB00671FBB /* ImageGridView.swift */; };
 		1055E8432963E99100671FBB /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055E8422963E99100671FBB /* UploadView.swift */; };
 		10D3E003296406FE00D4A989 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D3E002296406FE00D4A989 /* ImagePicker.swift */; };
+		10D3E005296411DE00D4A989 /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D3E004296411DE00D4A989 /* PostImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		1055E8402963DEFB00671FBB /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 		1055E8422963E99100671FBB /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 		10D3E002296406FE00D4A989 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		10D3E004296411DE00D4A989 /* PostImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				10524AEE29629A8500607E6A /* CommentsView.swift */,
 				104BF73A2962FB8B009DB026 /* BrowseView.swift */,
 				1055E8422963E99100671FBB /* UploadView.swift */,
+				10D3E004296411DE00D4A989 /* PostImageView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			files = (
 				103C86312961AF2000C30504 /* FeedView.swift in Sources */,
 				10524AEB296291E100607E6A /* PostModel.swift in Sources */,
+				10D3E005296411DE00D4A989 /* PostImageView.swift in Sources */,
 				105245BF2961944B0076D29C /* ContentView.swift in Sources */,
 				1055E8432963E99100671FBB /* UploadView.swift in Sources */,
 				104BF7372962F297009DB026 /* MessageView.swift in Sources */,
