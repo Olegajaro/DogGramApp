@@ -51,9 +51,9 @@ struct UploadView: View {
                 .scaledToFit()
                 .frame(width: 100, height: 100)
                 .shadow(radius: 12)
-                .fullScreenCover(isPresented: $showPostImageView) {
-                    PostImageView(imageSelected: $imageSelected)
-                }
+        }
+        .fullScreenCover(isPresented: $showPostImageView) {
+            PostImageView(imageSelected: $imageSelected)
         }
         .edgesIgnoringSafeArea(.top)
     }
