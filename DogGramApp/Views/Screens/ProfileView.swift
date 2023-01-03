@@ -10,6 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     
     @State var profileDisplayName: String
+    @State var showSetting = false
     var profileUserID: String
     var isMyProfile: Bool
     
@@ -24,13 +25,16 @@ struct ProfileView: View {
         .navigationTitle("Profile")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(trailing: Button {
-            // action here
+            showSetting.toggle()
         } label: {
             Image(systemName: "line.horizontal.3")
         }
             .accentColor(Color.MyTheme.purpleColor)
             .opacity(isMyProfile ? 1.0 : 0.0)
         )
+        .sheet(isPresented: $showSetting) {
+            SettingsView()
+        }
     }
 }
 
