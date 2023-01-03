@@ -15,7 +15,7 @@ struct CarouselView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            ForEach(1..<maxCount) { count in
+            ForEach(1..<8) { count in
                 Image("dog\(count)")
                     .resizable()
                     .scaledToFill()

@@ -10,29 +10,32 @@ import SwiftUI
 struct PostView: View {
     
     @State var post: PostModel
+    var showHeaderAndFooter: Bool
     
     var body: some View {
         VStack(alignment: .center, spacing: .zero) {
             
             // MARK: - Header
-            HStack {
-                Image("dog1")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 30, height: 30, alignment: .center)
-                .cornerRadius(15)
-                
-                Text(post.userName)
-                    .font(.callout)
-                    .fontWeight(.medium)
-                    .foregroundColor(.primary)
-                
-                Spacer()
-                
-                Image(systemName: "ellipsis")
-                    .font(.headline)
+            if showHeaderAndFooter {
+                HStack {
+                    Image("dog1")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 30, height: 30, alignment: .center)
+                        .cornerRadius(15)
+                    
+                    Text(post.userName)
+                        .font(.callout)
+                        .fontWeight(.medium)
+                        .foregroundColor(.primary)
+                    
+                    Spacer()
+                    
+                    Image(systemName: "ellipsis")
+                        .font(.headline)
+                }
+                .padding(6)
             }
-            .padding(6)
             
             // MARK: - Image
             Image("dog1")
@@ -40,30 +43,32 @@ struct PostView: View {
                 .scaledToFit()
             
             // MARK: - Footer
-            HStack(alignment: .center, spacing: 20) {
-                Image(systemName: "heart")
-                
-                // MARK: - Comments Icon
-                NavigationLink {
-                    CommentsView()
-                } label: {
-                    Image(systemName: "bubble.middle.bottom")
-                        .foregroundColor(.primary)
+            if showHeaderAndFooter {
+                HStack(alignment: .center, spacing: 20) {
+                    Image(systemName: "heart")
+                    
+                    // MARK: - Comments Icon
+                    NavigationLink {
+                        CommentsView()
+                    } label: {
+                        Image(systemName: "bubble.middle.bottom")
+                            .foregroundColor(.primary)
+                    }
+                    
+                    Image(systemName: "paperplane")
+                    
+                    Spacer()
                 }
-
-                Image(systemName: "paperplane")
-                
-                Spacer()
-            }
-            .font(.title3)
-            .padding(6)
-            
-            if let caption = post.caption {
-                HStack {
-                    Text(caption)
-                    Spacer(minLength: 0)
-                }
+                .font(.title3)
                 .padding(6)
+                
+                if let caption = post.caption {
+                    HStack {
+                        Text(caption)
+                        Spacer(minLength: 0)
+                    }
+                    .padding(6)
+                }
             }
         }
     }
@@ -77,7 +82,7 @@ struct PostView_Previews: PreviewProvider {
                                            likedByUser: false)
     
     static var previews: some View {
-        PostView(post: post)
+        PostView(post: post, showHeaderAndFooter: true)
             .previewLayout(.sizeThatFits)
     }
 }

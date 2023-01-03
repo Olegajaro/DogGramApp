@@ -22,6 +22,7 @@
 		10524AEB296291E100607E6A /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10524AEA296291E100607E6A /* PostModel.swift */; };
 		10524AED296294BD00607E6A /* PostArrayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10524AEC296294BD00607E6A /* PostArrayObject.swift */; };
 		10524AEF29629A8500607E6A /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10524AEE29629A8500607E6A /* CommentsView.swift */; };
+		1055E8412963DEFB00671FBB /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055E8402963DEFB00671FBB /* ImageGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		10524AEA296291E100607E6A /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		10524AEC296294BD00607E6A /* PostArrayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayObject.swift; sourceTree = "<group>"; };
 		10524AEE29629A8500607E6A /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		1055E8402963DEFB00671FBB /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				103C86322961B02200C30504 /* PostView.swift */,
 				104BF7362962F297009DB026 /* MessageView.swift */,
 				104BF73C2962FC32009DB026 /* CarouselView.swift */,
+				1055E8402963DEFB00671FBB /* ImageGridView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				104BF7372962F297009DB026 /* MessageView.swift in Sources */,
 				103C862F2961AD3400C30504 /* Extensions.swift in Sources */,
 				10524AED296294BD00607E6A /* PostArrayObject.swift in Sources */,
+				1055E8412963DEFB00671FBB /* ImageGridView.swift in Sources */,
 				103C86332961B02200C30504 /* PostView.swift in Sources */,
 				104BF73B2962FB8B009DB026 /* BrowseView.swift in Sources */,
 				104BF7392962F3CB009DB026 /* CommentModel.swift in Sources */,
