@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SignUpView: View {
+    
+    @State var showOnboarding = false
+    
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
             Spacer()
@@ -30,7 +33,7 @@ struct SignUpView: View {
                 .multilineTextAlignment(.center)
             
             Button {
-                
+                showOnboarding.toggle()
             } label: {
                 Text("SIGN IN / SIGN UP")
                     .font(.headline)
@@ -50,6 +53,9 @@ struct SignUpView: View {
         .padding(40)
         .background(Color.MyTheme.yellowColor)
         .edgesIgnoringSafeArea(.all)
+        .fullScreenCover(isPresented: $showOnboarding) {
+            OnboardingView()
+        }
     }
 }
 
