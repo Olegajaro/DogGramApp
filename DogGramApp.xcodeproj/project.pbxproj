@@ -33,6 +33,7 @@
 		10D7502A2964420100753974 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D750292964420100753974 /* SettingsRowView.swift */; };
 		10D7502E29644AA300753974 /* SettingsEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D7502D29644AA300753974 /* SettingsEditTextView.swift */; };
 		10D7503029645D6C00753974 /* SettingsEditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D7502F29645D6C00753974 /* SettingsEditImageView.swift */; };
+		10EF1396296537C700D9E270 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF1395296537C700D9E270 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		10D750292964420100753974 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		10D7502D29644AA300753974 /* SettingsEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditTextView.swift; sourceTree = "<group>"; };
 		10D7502F29645D6C00753974 /* SettingsEditImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditImageView.swift; sourceTree = "<group>"; };
+		10EF1395296537C700D9E270 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,11 +92,11 @@
 			children = (
 				105245BE2961944B0076D29C /* ContentView.swift */,
 				103C86302961AF2000C30504 /* FeedView.swift */,
-				10524AEE29629A8500607E6A /* CommentsView.swift */,
 				104BF73A2962FB8B009DB026 /* BrowseView.swift */,
-				1055E8422963E99100671FBB /* UploadView.swift */,
-				10D3E004296411DE00D4A989 /* PostImageView.swift */,
 				10D750202964328C00753974 /* ProfileView.swift */,
+				10524AEE29629A8500607E6A /* CommentsView.swift */,
+				10EF1395296537C700D9E270 /* SignUpView.swift */,
+				10EF13932965375200D9E270 /* UploadPost */,
 				10D7502B29644A6D00753974 /* Settings */,
 			);
 			path = Screens;
@@ -189,6 +191,15 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		10EF13932965375200D9E270 /* UploadPost */ = {
+			isa = PBXGroup;
+			children = (
+				1055E8422963E99100671FBB /* UploadView.swift */,
+				10D3E004296411DE00D4A989 /* PostImageView.swift */,
+			);
+			path = UploadPost;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,6 +275,7 @@
 				10524AEB296291E100607E6A /* PostModel.swift in Sources */,
 				10D7502829643FBA00753974 /* SettingsLabelView.swift in Sources */,
 				10D3E005296411DE00D4A989 /* PostImageView.swift in Sources */,
+				10EF1396296537C700D9E270 /* SignUpView.swift in Sources */,
 				105245BF2961944B0076D29C /* ContentView.swift in Sources */,
 				1055E8432963E99100671FBB /* UploadView.swift in Sources */,
 				104BF7372962F297009DB026 /* MessageView.swift in Sources */,
