@@ -25,6 +25,7 @@
 		1055E8412963DEFB00671FBB /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055E8402963DEFB00671FBB /* ImageGridView.swift */; };
 		1055E8432963E99100671FBB /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055E8422963E99100671FBB /* UploadView.swift */; };
 		106809CE2965A6F400C84693 /* OnboardingViewPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106809CD2965A6F400C84693 /* OnboardingViewPart2.swift */; };
+		106809D12965ADC300C84693 /* LikeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106809D02965ADC300C84693 /* LikeAnimationView.swift */; };
 		10D3E003296406FE00D4A989 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D3E002296406FE00D4A989 /* ImagePicker.swift */; };
 		10D3E005296411DE00D4A989 /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D3E004296411DE00D4A989 /* PostImageView.swift */; };
 		10D750212964328C00753974 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D750202964328C00753974 /* ProfileView.swift */; };
@@ -59,6 +60,7 @@
 		1055E8402963DEFB00671FBB /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 		1055E8422963E99100671FBB /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 		106809CD2965A6F400C84693 /* OnboardingViewPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPart2.swift; sourceTree = "<group>"; };
+		106809D02965ADC300C84693 /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
 		10D3E002296406FE00D4A989 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		10D3E004296411DE00D4A989 /* PostImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
 		10D750202964328C00753974 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				104BF73C2962FC32009DB026 /* CarouselView.swift */,
 				1055E8402963DEFB00671FBB /* ImageGridView.swift */,
 				10D750222964341700753974 /* ProfileHeaderView.swift */,
+				106809D02965ADC300C84693 /* LikeAnimationView.swift */,
 				10D7502C29644A8900753974 /* Settings */,
 			);
 			path = Subviews;
@@ -302,6 +305,7 @@
 				1055E8412963DEFB00671FBB /* ImageGridView.swift in Sources */,
 				10D750212964328C00753974 /* ProfileView.swift in Sources */,
 				103C86332961B02200C30504 /* PostView.swift in Sources */,
+				106809D12965ADC300C84693 /* LikeAnimationView.swift in Sources */,
 				104BF73B2962FB8B009DB026 /* BrowseView.swift in Sources */,
 				10D7503029645D6C00753974 /* SettingsEditImageView.swift in Sources */,
 				104BF7392962F3CB009DB026 /* CommentModel.swift in Sources */,
