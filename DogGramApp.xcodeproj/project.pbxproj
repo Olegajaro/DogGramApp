@@ -24,6 +24,7 @@
 		10524AEF29629A8500607E6A /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10524AEE29629A8500607E6A /* CommentsView.swift */; };
 		1055E8412963DEFB00671FBB /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055E8402963DEFB00671FBB /* ImageGridView.swift */; };
 		1055E8432963E99100671FBB /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055E8422963E99100671FBB /* UploadView.swift */; };
+		106809CE2965A6F400C84693 /* OnboardingViewPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106809CD2965A6F400C84693 /* OnboardingViewPart2.swift */; };
 		10D3E003296406FE00D4A989 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D3E002296406FE00D4A989 /* ImagePicker.swift */; };
 		10D3E005296411DE00D4A989 /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D3E004296411DE00D4A989 /* PostImageView.swift */; };
 		10D750212964328C00753974 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D750202964328C00753974 /* ProfileView.swift */; };
@@ -34,6 +35,8 @@
 		10D7502E29644AA300753974 /* SettingsEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D7502D29644AA300753974 /* SettingsEditTextView.swift */; };
 		10D7503029645D6C00753974 /* SettingsEditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D7502F29645D6C00753974 /* SettingsEditImageView.swift */; };
 		10EF1396296537C700D9E270 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF1395296537C700D9E270 /* SignUpView.swift */; };
+		10EF139829653C4900D9E270 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF139729653C4900D9E270 /* OnboardingView.swift */; };
+		10EF139A29653DF500D9E270 /* SignInWithAppleCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF139929653DF500D9E270 /* SignInWithAppleCustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,7 @@
 		10524AEE29629A8500607E6A /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		1055E8402963DEFB00671FBB /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 		1055E8422963E99100671FBB /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
+		106809CD2965A6F400C84693 /* OnboardingViewPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPart2.swift; sourceTree = "<group>"; };
 		10D3E002296406FE00D4A989 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		10D3E004296411DE00D4A989 /* PostImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
 		10D750202964328C00753974 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 		10D7502D29644AA300753974 /* SettingsEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditTextView.swift; sourceTree = "<group>"; };
 		10D7502F29645D6C00753974 /* SettingsEditImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditImageView.swift; sourceTree = "<group>"; };
 		10EF1395296537C700D9E270 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		10EF139729653C4900D9E270 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		10EF139929653DF500D9E270 /* SignInWithAppleCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleCustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,7 @@
 				104BF73A2962FB8B009DB026 /* BrowseView.swift */,
 				10D750202964328C00753974 /* ProfileView.swift */,
 				10524AEE29629A8500607E6A /* CommentsView.swift */,
-				10EF1395296537C700D9E270 /* SignUpView.swift */,
+				106809CF2965AB5700C84693 /* CreateProfile */,
 				10EF13932965375200D9E270 /* UploadPost */,
 				10D7502B29644A6D00753974 /* Settings */,
 			);
@@ -120,6 +126,7 @@
 			children = (
 				103C862E2961AD3400C30504 /* Extensions.swift */,
 				10D3E002296406FE00D4A989 /* ImagePicker.swift */,
+				10EF139929653DF500D9E270 /* SignInWithAppleCustomButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -170,6 +177,16 @@
 				10524AEC296294BD00607E6A /* PostArrayObject.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		106809CF2965AB5700C84693 /* CreateProfile */ = {
+			isa = PBXGroup;
+			children = (
+				10EF1395296537C700D9E270 /* SignUpView.swift */,
+				10EF139729653C4900D9E270 /* OnboardingView.swift */,
+				106809CD2965A6F400C84693 /* OnboardingViewPart2.swift */,
+			);
+			path = CreateProfile;
 			sourceTree = "<group>";
 		};
 		10D7502B29644A6D00753974 /* Settings */ = {
@@ -276,6 +293,7 @@
 				10D7502829643FBA00753974 /* SettingsLabelView.swift in Sources */,
 				10D3E005296411DE00D4A989 /* PostImageView.swift in Sources */,
 				10EF1396296537C700D9E270 /* SignUpView.swift in Sources */,
+				10EF139A29653DF500D9E270 /* SignInWithAppleCustomButton.swift in Sources */,
 				105245BF2961944B0076D29C /* ContentView.swift in Sources */,
 				1055E8432963E99100671FBB /* UploadView.swift in Sources */,
 				104BF7372962F297009DB026 /* MessageView.swift in Sources */,
@@ -289,11 +307,13 @@
 				104BF7392962F3CB009DB026 /* CommentModel.swift in Sources */,
 				10D750232964341700753974 /* ProfileHeaderView.swift in Sources */,
 				10524AEF29629A8500607E6A /* CommentsView.swift in Sources */,
+				10EF139829653C4900D9E270 /* OnboardingView.swift in Sources */,
 				10D3E003296406FE00D4A989 /* ImagePicker.swift in Sources */,
 				104BF73D2962FC32009DB026 /* CarouselView.swift in Sources */,
 				105245BD2961944B0076D29C /* DogGramApp.swift in Sources */,
 				10D7502529643D9500753974 /* SettingsView.swift in Sources */,
 				10D7502E29644AA300753974 /* SettingsEditTextView.swift in Sources */,
+				106809CE2965A6F400C84693 /* OnboardingViewPart2.swift in Sources */,
 				10D7502A2964420100753974 /* SettingsRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
