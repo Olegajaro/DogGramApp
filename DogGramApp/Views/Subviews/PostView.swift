@@ -11,9 +11,18 @@ struct PostView: View {
     
     @State var post: PostModel
     var showHeaderAndFooter: Bool
+    @State var postImage = UIImage(named: "dog1")!
     
     @State var animateLike = false
     @State var addHeartAnimationToView: Bool
+    
+    @State var showActionSheet = false
+    @State var actionSheetType: PostActionSheetOption = .general
+    
+    enum PostActionSheetOption {
+        case general
+        case reporting
+    }
     
     var body: some View {
         VStack(alignment: .center, spacing: .zero) {
@@ -40,15 +49,23 @@ struct PostView: View {
 
                     Spacer()
                     
-                    Image(systemName: "ellipsis")
-                        .font(.headline)
+                    Button {
+                        showActionSheet.toggle()
+                    } label: {
+                        Image(systemName: "ellipsis")
+                            .font(.headline)
+                    }
+                    .accentColor(.primary)
+                    .actionSheet(isPresented: $showActionSheet) {
+                        getActionSheet()
+                    }
                 }
                 .padding(6)
             }
             
             // MARK: - Image
             ZStack {
-                Image("dog1")
+                Image(uiImage: postImage)
                     .resizable()
                 .scaledToFit()
                 
@@ -60,6 +77,7 @@ struct PostView: View {
             // MARK: - Footer
             if showHeaderAndFooter {
                 HStack(alignment: .center, spacing: 20) {
+                    // MARK: - Like button
                     Button {
                         if post.likedByUser {
                             unlikePost()
@@ -79,8 +97,14 @@ struct PostView: View {
                             .foregroundColor(.primary)
                     }
                     
-                    Image(systemName: "paperplane")
-                    
+                    // MARK: - Share Button
+                    Button {
+                        sharePost()
+                    } label: {
+                        Image(systemName: "paperplane")
+                    }
+                    .accentColor(.primary)
+
                     Spacer()
                 }
                 .font(.title3)
@@ -119,6 +143,57 @@ struct PostView: View {
                                     dateCreated: post.dateCreated,likeCount: post.likeCount - 1,
                                     likedByUser: false)
         self.post = updatedPost
+    }
+    
+    private func getActionSheet() -> ActionSheet {
+        switch actionSheetType {
+        case .general:
+            return ActionSheet(title: Text("What would you like to do?"), buttons: [
+                .destructive(Text("Report"), action: {
+                    actionSheetType = .reporting
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        self.showActionSheet.toggle()
+                    }
+                }),
+                .default(Text("Learn more..."), action: {
+                    print("DEBUG: learn more pressed")
+                }),
+                .cancel()
+            ])
+        case .reporting:
+            return ActionSheet(title: Text("Why are you reporting this post?"), buttons: [
+                .destructive(Text("This is inappropriate"), action: {
+                    reportPost(reason: "This is inappropriate")
+                }),
+                .destructive(Text("This is spam"), action: {
+                    reportPost(reason: "This is spam")
+                }),
+                .destructive(Text("It made me uncomfortable"), action: {
+                    reportPost(reason: "It made me uncomfortable")
+                }),
+                .cancel {
+                    actionSheetType = .general
+                }
+            ])
+        }
+    }
+    
+    private func reportPost(reason: String) {
+        print("DEBUG: report post now")
+    }
+    
+    private func sharePost() {
+        let message = "Check out this post on DogGram!"
+        let image = postImage
+        let link = URL(string: "https://www.google.com")!
+        
+        let activityVC = UIActivityViewController(activityItems: [message, image, link],
+                                                  applicationActivities: nil)
+        
+        let viewController = UIApplication.shared.windows.first?.rootViewController
+        DispatchQueue.main.async {
+            viewController?.present(activityVC, animated: true)
+        }
     }
 }
 
