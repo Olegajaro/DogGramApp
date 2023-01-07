@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1021F47F29691A120018B856 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1021F47E29691A120018B856 /* GoogleService-Info.plist */; };
 		103C862F2961AD3400C30504 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C862E2961AD3400C30504 /* Extensions.swift */; };
 		103C86312961AF2000C30504 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C86302961AF2000C30504 /* FeedView.swift */; };
 		103C86332961B02200C30504 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C86322961B02200C30504 /* PostView.swift */; };
@@ -38,9 +39,12 @@
 		10EF1396296537C700D9E270 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF1395296537C700D9E270 /* SignUpView.swift */; };
 		10EF139829653C4900D9E270 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF139729653C4900D9E270 /* OnboardingView.swift */; };
 		10EF139A29653DF500D9E270 /* SignInWithAppleCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF139929653DF500D9E270 /* SignInWithAppleCustomButton.swift */; };
+		5DE76B3A5668FDE852AB83F3 /* Pods_DogGramApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DDCDFAA2A0DE07559BF308 /* Pods_DogGramApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06512962CDCCE3E4D3687F26 /* Pods-DogGramApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogGramApp.release.xcconfig"; path = "Target Support Files/Pods-DogGramApp/Pods-DogGramApp.release.xcconfig"; sourceTree = "<group>"; };
+		1021F47E29691A120018B856 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		103C862E2961AD3400C30504 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		103C86302961AF2000C30504 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		103C86322961B02200C30504 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 		10EF1395296537C700D9E270 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		10EF139729653C4900D9E270 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		10EF139929653DF500D9E270 /* SignInWithAppleCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleCustomButton.swift; sourceTree = "<group>"; };
+		5975942E4155A736CD832D2B /* Pods-DogGramApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogGramApp.debug.xcconfig"; path = "Target Support Files/Pods-DogGramApp/Pods-DogGramApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E4DDCDFAA2A0DE07559BF308 /* Pods_DogGramApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogGramApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DE76B3A5668FDE852AB83F3 /* Pods_DogGramApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +146,8 @@
 			children = (
 				105245BB2961944B0076D29C /* DogGramApp */,
 				105245BA2961944B0076D29C /* Products */,
+				1234B909408EB0511AF2DBC0 /* Pods */,
+				C1FEFEECC5655EA87E169FFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +167,7 @@
 				103C862A2961AAE800C30504 /* Views */,
 				103C862D2961AD2100C30504 /* Helpers */,
 				105245C02961944C0076D29C /* Assets.xcassets */,
+				1021F47E29691A120018B856 /* GoogleService-Info.plist */,
 				105245C22961944C0076D29C /* Preview Content */,
 				105245CA296197550076D29C /* LaunchScreen.storyboard */,
 			);
@@ -220,6 +230,23 @@
 			path = UploadPost;
 			sourceTree = "<group>";
 		};
+		1234B909408EB0511AF2DBC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5975942E4155A736CD832D2B /* Pods-DogGramApp.debug.xcconfig */,
+				06512962CDCCE3E4D3687F26 /* Pods-DogGramApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C1FEFEECC5655EA87E169FFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4DDCDFAA2A0DE07559BF308 /* Pods_DogGramApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 105245C72961944C0076D29C /* Build configuration list for PBXNativeTarget "DogGramApp" */;
 			buildPhases = (
+				7D79EFBB23F0FDD9955D5A10 /* [CP] Check Pods Manifest.lock */,
 				105245B52961944B0076D29C /* Sources */,
 				105245B62961944B0076D29C /* Frameworks */,
 				105245B72961944B0076D29C /* Resources */,
+				67ECF696DD2B570B3440A54F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,11 +309,54 @@
 			files = (
 				105245CB296197550076D29C /* LaunchScreen.storyboard in Resources */,
 				105245C42961944C0076D29C /* Preview Assets.xcassets in Resources */,
+				1021F47F29691A120018B856 /* GoogleService-Info.plist in Resources */,
 				105245C12961944C0076D29C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67ECF696DD2B570B3440A54F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DogGramApp/Pods-DogGramApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DogGramApp/Pods-DogGramApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DogGramApp/Pods-DogGramApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D79EFBB23F0FDD9955D5A10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DogGramApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		105245B52961944B0076D29C /* Sources */ = {
@@ -375,7 +447,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -429,9 +501,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -441,6 +514,7 @@
 		};
 		105245C82961944C0076D29C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5975942E4155A736CD832D2B /* Pods-DogGramApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,6 +548,7 @@
 		};
 		105245C92961944C0076D29C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06512962CDCCE3E4D3687F26 /* Pods-DogGramApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -497,6 +572,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.myapps.DogGramApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
