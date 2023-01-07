@@ -11,6 +11,7 @@ struct OnboardingView: View {
     
     @Environment (\.presentationMode) var presentationMode
     @State var showOnboardingPart2 = false
+    @State var showError = false
     
     var body: some View {
         VStack(spacing: 10) {
@@ -37,7 +38,7 @@ struct OnboardingView: View {
             
             Button {
                 // Sign in with AppleID
-                showOnboardingPart2.toggle()
+                SignInWithApple.shared.startSignInWithAppleFlow(view: self)
             } label: {
                 SignInWithAppleCustomButton()
                     .frame(height: 60)
@@ -78,6 +79,9 @@ struct OnboardingView: View {
         .edgesIgnoringSafeArea(.all)
         .fullScreenCover(isPresented: $showOnboardingPart2) {
             OnboardingViewPart2()
+        }
+        .alert(isPresented: $showError) {
+            return Alert(title: Text("Error signing in 😔"))
         }
     }
 }

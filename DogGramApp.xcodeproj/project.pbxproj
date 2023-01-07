@@ -23,6 +23,7 @@
 		10524AEB296291E100607E6A /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10524AEA296291E100607E6A /* PostModel.swift */; };
 		10524AED296294BD00607E6A /* PostArrayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10524AEC296294BD00607E6A /* PostArrayObject.swift */; };
 		10524AEF29629A8500607E6A /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10524AEE29629A8500607E6A /* CommentsView.swift */; };
+		10539E7E29693C15007926DD /* SignInWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10539E7D29693C15007926DD /* SignInWithApple.swift */; };
 		1055E8412963DEFB00671FBB /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055E8402963DEFB00671FBB /* ImageGridView.swift */; };
 		1055E8432963E99100671FBB /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055E8422963E99100671FBB /* UploadView.swift */; };
 		106809CE2965A6F400C84693 /* OnboardingViewPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106809CD2965A6F400C84693 /* OnboardingViewPart2.swift */; };
@@ -61,6 +62,7 @@
 		10524AEA296291E100607E6A /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		10524AEC296294BD00607E6A /* PostArrayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayObject.swift; sourceTree = "<group>"; };
 		10524AEE29629A8500607E6A /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		10539E7D29693C15007926DD /* SignInWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithApple.swift; sourceTree = "<group>"; };
 		1055E8402963DEFB00671FBB /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 		1055E8422963E99100671FBB /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 		106809CD2965A6F400C84693 /* OnboardingViewPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPart2.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				105245BC2961944B0076D29C /* DogGramApp.swift */,
 				10524AE9296291CA00607E6A /* Models */,
 				103C862A2961AAE800C30504 /* Views */,
+				10539E7B29693BE2007926DD /* Services */,
 				103C862D2961AD2100C30504 /* Helpers */,
 				105245C02961944C0076D29C /* Assets.xcassets */,
 				1021F47E29691A120018B856 /* GoogleService-Info.plist */,
@@ -190,6 +193,22 @@
 				10524AEC296294BD00607E6A /* PostArrayObject.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		10539E7B29693BE2007926DD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				10539E7C29693BF1007926DD /* SignInProviders */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		10539E7C29693BF1007926DD /* SignInProviders */ = {
+			isa = PBXGroup;
+			children = (
+				10539E7D29693C15007926DD /* SignInWithApple.swift */,
+			);
+			path = SignInProviders;
 			sourceTree = "<group>";
 		};
 		106809CF2965AB5700C84693 /* CreateProfile */ = {
@@ -375,6 +394,7 @@
 				103C862F2961AD3400C30504 /* Extensions.swift in Sources */,
 				10524AED296294BD00607E6A /* PostArrayObject.swift in Sources */,
 				1055E8412963DEFB00671FBB /* ImageGridView.swift in Sources */,
+				10539E7E29693C15007926DD /* SignInWithApple.swift in Sources */,
 				10D750212964328C00753974 /* ProfileView.swift in Sources */,
 				103C86332961B02200C30504 /* PostView.swift in Sources */,
 				106809D12965ADC300C84693 /* LikeAnimationView.swift in Sources */,
