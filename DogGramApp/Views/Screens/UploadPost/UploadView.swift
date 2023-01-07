@@ -10,6 +10,7 @@ import UIKit
 
 struct UploadView: View {
     
+    @Environment(\.colorScheme) var colorScheme
     @State var showImagePicker = false
     @State var imageSelected = UIImage(named: "logo")!
     @State var sourceType: UIImagePickerController.SourceType = .camera
@@ -44,6 +45,10 @@ struct UploadView: View {
             }
             .sheet(isPresented: $showImagePicker, onDismiss: segueToPostImageView) {
                 ImagePicker(imageSelected: $imageSelected, sourceType: $sourceType)
+                    .preferredColorScheme(colorScheme)
+                    .accentColor(colorScheme == .light
+                                 ? Color.MyTheme.purpleColor
+                                 : Color.MyTheme.yellowColor)
             }
             
             Image("logo.transparent")
@@ -54,6 +59,7 @@ struct UploadView: View {
         }
         .fullScreenCover(isPresented: $showPostImageView) {
             PostImageView(imageSelected: $imageSelected)
+                .preferredColorScheme(colorScheme)
         }
         .edgesIgnoringSafeArea(.top)
     }

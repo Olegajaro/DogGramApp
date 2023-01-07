@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @Environment(\.colorScheme) var colorScheme
     var currentUserId: String? = nil
     
     var body: some View {
@@ -49,7 +50,9 @@ struct ContentView: View {
                 Text("Profile")
             }
         }
-        .accentColor(Color.MyTheme.purpleColor)
+        .accentColor(colorScheme == .light
+                     ? Color.MyTheme.purpleColor
+                     : Color.MyTheme.yellowColor)
     }
 }
 

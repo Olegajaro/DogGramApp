@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OnboardingViewPart2: View {
     
+    @Environment(\.colorScheme) var colorScheme
     @State var displayName = ""
     @State var showImagePicker = false
     
@@ -21,13 +22,17 @@ struct OnboardingViewPart2: View {
             Text("What's your name?")
                 .font(.title)
                 .fontWeight(.bold)
-                .foregroundColor(Color.MyTheme.yellowColor)
+                .foregroundColor(colorScheme == .light
+                                 ? Color.MyTheme.yellowColor
+                                 : Color.MyTheme.purpleColor)
             
             TextField("Add your name here...", text: $displayName)
                 .padding()
                 .frame(height: 60)
                 .frame(maxWidth: .infinity)
-                .background(Color.MyTheme.beigeColor)
+                .background(colorScheme == .light
+                            ? Color.MyTheme.beigeColor
+                            : Color.MyTheme.purpleColor)
                 .cornerRadius(12)
                 .font(.headline)
                 .autocapitalization(.sentences)
@@ -42,16 +47,22 @@ struct OnboardingViewPart2: View {
                     .padding()
                     .frame(height: 60)
                     .frame(maxWidth: .infinity)
-                    .background(Color.MyTheme.yellowColor)
+                    .background(colorScheme == .light
+                                ? Color.MyTheme.yellowColor
+                                : Color.MyTheme.purpleColor)
                     .cornerRadius(12)
                     .padding(.horizontal)
             }
-            .accentColor(Color.MyTheme.purpleColor)
+            .accentColor(colorScheme == .light
+                         ? Color.MyTheme.purpleColor
+                         : Color.MyTheme.yellowColor)
             .opacity(displayName != "" ? 1.0 : 0.0)
             .animation(.easeInOut(duration: 1.0))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.MyTheme.purpleColor)
+        .background(colorScheme == .light
+                    ? Color.MyTheme.purpleColor
+                    : Color.MyTheme.yellowColor)
         .edgesIgnoringSafeArea(.all)
         .sheet(isPresented: $showImagePicker, onDismiss: createProfile) {
             ImagePicker(imageSelected: $imageSelected, sourceType: $sourceType)
